@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script type=”text/JavaScript” src = “https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js”></script>
+</head>
+<body>
+    <!-- FORMULARIO -->
+    <header>
+        <img src="img/pc_gamer.webp" alt="" width="50%" height="50%">
+    </header>
+    <div class="pedido">
+        <h1>
+            PEDIDOS Y PROFORMAS ONLINE "TIENDA PC GLOBAL"
+        </h1>
+    </div>
+    
+    <div class="correo">
+        <form action="">
+            <label for="">Correo electrónico<span>*</span></label><br><br>
+            <input type="text" name = "correo" placeholder="Ingresa tu correo electrónico">
+        </form>
+    </div>
+    <div class="tarjeta_video">
+        <h3>
+            TARJETAS DE VIDEO:
+        </h3>
+        <form method="post">
+            <input type="checkbox" name="tarjeta" id="tarjeta_1" value="2138">
+            <label for="tarjeta_1">Geforce GTX 1660</label><br><br>
+            <input type="checkbox" name="tarjeta" id="tarjeta_2" value="1775">
+            <label for="tarjeta_2">Geforce RTX 3050</label><br><br>
+            <input type="checkbox" name="tarjeta" id="tarjeta_3" value="4489">
+            <label for="tarjeta_3">Nvidia Geforce RTX 3080</label><br><br>
+            <input id = "tarjetas" type = "number" hidden=""false>
+        </form>
+    </div>
+    <div class="monitor">
+        <h3>
+            MONITOR:
+        </h3>
+        <form action="">
+            <input type="checkbox" name="monitor" id="monitor_1" value = "1349">
+            <label for="monitor_1">Monitor Gaming Odyssey G5 de 27" QHD 165hz 1ms</label><br><br>
+            <input type="checkbox" name="monitor" id="monitor_2" value="915">
+            <label for="monitor_2">Monitor Gamer LG de 24"</label><br><br>
+            <input type="checkbox" name="monitor" id="monitor_3" value = "1499">
+            <label for="monitor_3">Monitor UHD 4K 32''</label><br><br>
+            <input id = "monitores" type="number" hidden = "false">
+        </form>
+    </div>
+    <div class="memoria_ram">
+        <h3>
+            MEMORIA RAM:
+        </h3>
+        <form action="">
+            <input type="checkbox" name="memoria" id="memoria_1" value = "455">
+            <label for="memoria_1">Memoria optimizada Corsair Vengeance RGB Pro de 16 GB (2x8 GB), color negro</label><br><br>
+            <input type="checkbox" name="memoria" id="memoria_2"value = "755">
+            <label for="memoria_2">Kingston FURY Beast RGB 32 GB (2x16 GB) 3600 MHz DDR4 CL18 Kit de memoria de escritorio de 2</label><br><br>
+            <input type="checkbox" name="memoria" id="memoria_3" value = "619">
+            <label for="memoria_3">TEAMGROUP T-Force Delta RGB DDR4 32GB (2x16GB) 3600 MHz (PC4-28800)</label><br><br>
+            <input id = "memorias" type="number" hidden = "false">
+        </form>
+    </div>
+    <div class="case">
+        <h3>
+            CASE:
+        </h3>
+        <form action="">
+            <input type="checkbox" name="case" id="case_1" value = "439">
+            <label for="case_1">Estuche de PC ATX de torre media XPG STARKER AIR con panel frontal de malla y efecto de luz ARGB negro</label><br><br>
+            <input type="checkbox" name="case" id="case_2" value="334.90">
+            <label for="case_2">Case Gamer 1STPlayer -FB-X7-Color Negro</label><br><br>
+            <input type="checkbox" name="case" id="case_3" value="234.90">
+            <label for="case_3">Case Gamer Micronics Player GC801 USB 3.0 4 FAN DOUBLE RING RAINBOW</label><br><br>
+            <input id = "cases" type="number" hidden = "false">
+        </form>
+    </div>
+    <div class="teclado">
+        <h2>
+            TECLADO:
+        </h2>
+        <form action="">
+            <input type="checkbox" name="teclado" id="teclado_1" value="89.90">
+            <label for="teclado_1">Teclado Gamer KB866L Negro</label><br><br>
+            <input type="checkbox" name="teclado" id="teclado_2" value="69">
+            <label for="teclado_2">Teclado Gamer Halion Diamond K658 Rainbow</label><br><br>
+            <input type="checkbox" name="teclado" id="teclado_3" value="163.90">
+            <label for="teclado_3">Teclado Gamer Mecánico Redragon RGB una mano reposa muñeca Brown Diti K585RGB</label><br><br>
+            <input id = "teclados" type="number" hidden = "false">
+        </form>
+    </div>
+    <div class="mouse">
+        <h2>
+            MOUSE:
+        </h2>
+        <form action="">
+            <input type="checkbox" name="mouse" id="mouse_1" value="150">
+            <label for="mouse_1">Mouse Gamer Logitech G203 Lightsynco óptico</label><br><br>
+            <input type="checkbox" name="mouse" id="mouse_2" value="79">
+            <label for="mouse_2">Mouse Gamer con Led Multicolor Alambrico</label><br><br>
+            <input type="checkbox" name="mouse" id="mouse_3" value="524.90">
+            <label for="mouse_3">Mouse Gamer Logitech inalámbrico G502 Lightspeed</label><br><br>
+            <input id = "mouses" type="number" hidden = "false">
+        </form>
+    </div>
+    <div class="audifono">
+        <h2>
+            AUDIFONO:
+        </h2>
+        <form action="">
+            <input type="checkbox" name="audifono" id="audifono_1" value="80">
+            <label for="audifono_1">Audífonos gamer D5000 pro luces RGB Dreizt</label><br><br>
+            <input type="checkbox" name="audifono" id="audifono_2" value="249">
+            <label for="audifono_2">Audífono Gamer Logitech G432 USB Black</label><br><br>
+            <input type="checkbox" name="audifono" id="audifono_3" value="629">
+            <label for="audifono_3">Audífonos inalámbricos Logitech G733 Lightspeed</label><br><br>
+            <input id = "audifonos" type="number" hidden = "false">
+        </form>
+    </div>
+    <br>
+    
+    <button class="enviar"  pys-onClick="calcular" id="btn" >Calcular</button>
+    <br><br>
+    <p>El precio total a pagar es: S/.<span class="precio" id="output1"></span></p>
+    <br><br>    
+    <script>
+// Capturar valores de check box 
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', (event) => {
+        // tarjetas
+            var checkboxes = document.querySelectorAll('input[name="tarjeta"]:checked');
+            let values_tarjetas = [];
+            checkboxes.forEach((checkbox) => {
+                // asignar el "+" para que se declare como entero y no como string
+            values_tarjetas.push(+checkbox.value);
+            });
+                // acumulador y sumar valores del array
+            const reducer = (accumulator, curr) => accumulator + curr;
+            document.getElementById("tarjetas").value = values_tarjetas.reduce(reducer); 
+            
+        // monitores
+            var checkboxes_monitores = document.querySelectorAll('input[name="monitor"]:checked');
+            let values_monitores = [];
+            checkboxes_monitores.forEach((checkbox) => {
+                // asignar el "+" para que se declare como entero y no como string
+            values_monitores.push(+checkbox.value);
+            });
+                // acumulador y sumar valores del array
+            const reducer_mo = (accumulator, curr) => accumulator + curr;
+            document.getElementById("monitores").value = values_monitores.reduce(reducer_mo); 
+
+        // memorias
+            var checkboxes_memorias = document.querySelectorAll('input[name="memoria"]:checked');
+            let values_memorias = [];
+            checkboxes_memorias.forEach((checkbox) => {
+                // asignar el "+" para que se declare como entero y no como string
+    values_memorias.push(+checkbox.value);
+            });
+                // acumulador y sumar valores del array
+            const reducer_me = (accumulator, curr) => accumulator + curr;   
+            document.getElementById("memorias").value = values_memorias.reduce(reducer_me); 
+
+
+        // cases
+            var checkboxes_cases = document.querySelectorAll('input[name="case"]:checked');
+            let values_cases = [];
+            checkboxes_cases.forEach((checkbox) => {
+                // asignar el "+" para que se declare como entero y no como string
+    values_cases.push(+checkbox.value);
+            });
+                // acumulador y sumar valores del array
+            const reducer_ca = (accumulator, curr) => accumulator + curr;   
+            document.getElementById("cases").value = values_cases.reduce(reducer_ca);
+        
+            
+        // teclados
+            var checkboxes_teclados = document.querySelectorAll('input[name="teclado"]:checked');
+            let values_teclados = [];
+            checkboxes_teclados.forEach((checkbox) => {
+                // asignar el "+" para que se declare como entero y no como string
+    values_teclados.push(+checkbox.value);
+            });
+                // acumulador y sumar valores del array
+            const reducer_te = (accumulator, curr) => accumulator + curr;   
+            document.getElementById("teclados").value = values_teclados.reduce(reducer_te);
+
+
+        // mouses
+            var checkboxes_mouses = document.querySelectorAll('input[name="mouse"]:checked');
+            let values_mouses = [];
+            checkboxes_mouses.forEach((checkbox) => {
+                // asignar el "+" para que se declare como entero y no como string
+    values_mouses.push(+checkbox.value);
+            });
+                // acumulador y sumar valores del array
+            const reducer_mou = (accumulator, curr) => accumulator + curr;   
+            document.getElementById("mouses").value = values_mouses.reduce(reducer_mou);
+        // audifonos
+            var checkboxes_audifonos = document.querySelectorAll('input[name="audifono"]:checked');
+            let values_audifonos = [];
+            checkboxes_audifonos.forEach((checkbox) => {
+                // asignar el "+" para que se declare como entero y no como string
+    values_audifonos.push(+checkbox.value);
+            });
+                // acumulador y sumar valores del array
+            const reducer_au = (accumulator, curr) => accumulator + curr;   
+            document.getElementById("audifonos").value = values_audifonos.reduce(reducer_au);
+        }); 
+        
+        
+      </script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<py-script src="/operaciones.py"> </py-script>
+</body>
+</html>
